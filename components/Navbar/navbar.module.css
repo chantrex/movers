@@ -1,5 +1,5 @@
 .container {
-  background-color: red;
-  height: 300px;
-  width: 399px;
+  background-color: rgba(255, 0, 0, 0.332);
+  width: 100vw;
+  height: 5rem;
 }
