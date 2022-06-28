@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.332);
+  background-color: rgba(255, 255, 255, 0.4);
   width: 100vw;
   height: 6rem;
   padding: 5px;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid black;
+  border-radius: 7px;
 }
 
 .navbarLinksOl {
