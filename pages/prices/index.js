@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import styles from './prices.module.css';
 
@@ -7,6 +8,9 @@ let movingPlus = 899;
 export default function Prices() {
   return (
     <>
+    <Head>
+      <title>Movers | Prices</title>
+    </Head>
     <Navbar />
       <section className={styles.container}>
         <div className={styles.mainTitleContainer}>
