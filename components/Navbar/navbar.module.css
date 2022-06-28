@@ -27,7 +27,8 @@
   transition: .1s ease-in-out;
 }
 
-@media screen and (max-width: 400px) {
+/* Responsive design (specaily for iPhones 12/13 Pro) */
+@media screen and (max-width: 510px) {
 
   .container {
     display: flex;
@@ -43,6 +44,7 @@
     width: 200px;
     padding: 0;
   }
+
   .navbarLinks {
     font-size: 18px;
     cursor: pointer;
@@ -57,4 +59,13 @@
     font-weight: 0;
   }
 
+}
+
+/* For 300px or lesser devices the navabar's box links will be smaller */
+@media screen and (max-width: 300px) {
+
+    .navbarLinksOl {
+    width: 120px;
+  }
+  
 }

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import Link from "next/link";
 import styles from './navbar.module.css';
 
+
+// This function will have the navbar component to use in the entire site
 export default function Navbar() {
   return(
     <>
