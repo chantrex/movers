@@ -7,16 +7,16 @@ export default function Navbar() {
     <>
       <section className={styles.container}>
         <h1>Pulga Movers</h1>
-        <div>
-          <ol>
+        <div className={styles.navbarLinksBox}>
+          <ol className={styles.navbarLinksOl}>
             <Link href="/">
-              <li>Home</li>
+              <p className={styles.navbarLinks}>Home</p>
             </Link>
             <Link href="/contact">
-              <li>Contact</li>
+              <p className={styles.navbarLinks}>Contact</p>
             </Link>
             <Link href="/prices">
-              <li>Prices</li>
+              <p className={styles.navbarLinks}>Prices</p>
             </Link>
           </ol>
         </div>
