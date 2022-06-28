@@ -1,3 +1,10 @@
+import Navbar from "../../components/Navbar";
+
 export default function Prices() {
-  return <h1>Our prices!</h1>;
+  return (
+    <>
+    <Navbar />
+      <h1>Our prices!</h1>
+    </>
+  );
 }
