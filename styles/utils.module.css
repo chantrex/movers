@@ -137,3 +137,28 @@
 .whyUsCard img {
   width: 75px;
 }
+
+@media screen and (max-width: 710px) {
+  .cardsContainer {
+    flex-direction: column;
+  }
+
+  .container2Header {
+    margin-bottom: 60px;
+  }
+
+  .container2Header span {
+    margin: 10px 0;
+  }
+
+  .whyUsCard {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .whyUsCard ul{
+    font-size: 20px;
+  }
+}

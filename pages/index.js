@@ -18,6 +18,8 @@ export default function Home() {
         </div>
       </section>
       <section className={utilStyles.container2}>
+        {/* The animation in the title is causing some troubles when the screen is lesser
+        than 300px */}
         <h1 className={utilStyles.container2Header}>
           <span>W</span>
           <span>e</span>
