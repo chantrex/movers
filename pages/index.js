@@ -62,7 +62,8 @@ export default function Home() {
         {/* The animation in the title is causing some troubles when the screen is lesser
         than 300px */}
         <h1 className={utilStyles.container2Header}>
-          <span>W</span>
+          We Are Your Best Option
+          {/* <span>W</span>
           <span>e</span>
           <span> a</span>
           <span>r</span>
@@ -80,7 +81,7 @@ export default function Home() {
           <span>t</span>
           <span>i</span>
           <span>o</span>
-          <span>n</span>
+          <span>n</span> */}
         </h1>
         <main className={utilStyles.cardsContainer}>
           <div className={utilStyles.whyUsCard}>
