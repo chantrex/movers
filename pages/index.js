@@ -19,6 +19,16 @@ function StarsCounter5() {
   );
 }
 
+// function FormData() {
+//   return (
+//     <form action="https://formsubmit.co/your@email.com" method="POST">
+//       <input type="text" name="name" required>
+//       <input type="email" name="email" required>
+//       <button type="submit">Send</button>
+//     </form> 
+//   );
+// }
+
 export default function Home() {
   return (
     <Layout home>
@@ -27,10 +37,22 @@ export default function Home() {
       </Head>
       <Navbar />
       <section className={utilStyles.container1}>
-        <h1>Pulga Movers. Changes are good!</h1>
+        <div className={utilStyles.mainPresentation}>
+          <h1>Pulga Movers.<br/>Changes are good!</h1>
+          <form className={utilStyles.contactForm} action="https://formsubmit.co/chris.chantres@gmail.com" method='POST'>
+            <h2>Contact us!</h2>
+            <label>Your name:</label>
+            <input type="text" name='name' placeholder='Mark Lamar' required />
+            <label>Your email:</label>
+            <input type="email" name='email' placeholder='mark123@mail.com' required />
+            <label>Your message:</label>
+            <textarea placeholder="Tell us your message!" name="message" required></textarea>
+            <button type='submit'>Send</button>
+          </form>
+        </div>
         <div className={utilStyles.videoContainer}>
           <div className={utilStyles.videoContainerOverlay}></div>
-          <img src="https://media2.giphy.com/media/UTj6uNKzYFmJGbKdgH/giphy.gif?cid=ecf05e4796z486iumakdlkts123fzlpxw8ibh6odsb3wj9sv&rid=giphy.gif&ct=g" alt="" />
+          <img src="https://i.ibb.co/pXKvG39/toronto1.jpg" alt="" />
         </div>
       </section>
       <section className={utilStyles.howStartMovingContainer}>

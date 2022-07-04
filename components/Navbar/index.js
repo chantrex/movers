@@ -10,17 +10,21 @@ export default function Navbar() {
       <section className={styles.container}>
         <h1>Pulga Movers</h1>
         <div className={styles.navbarLinksBox}>
-          <ol className={styles.navbarLinksOl}>
+          <div className={styles.navbarLinksOl}>
             <Link href="/">
               <p className={styles.navbarLinks}>Home</p>
             </Link>
             <Link href="/contact">
               <p className={styles.navbarLinks}>Contact</p>
             </Link>
-            <Link href="/prices">
+          </div>
+          <div className={styles.navbarLinksOl}>
+          <Link href="/prices">
               <p className={styles.navbarLinks}>Prices</p>
             </Link>
-          </ol>
+            <a className={styles.navbarLinksPhone} href="tel:+522227734502">Call us: 222 773 4502</a>
+          </div>
+            
         </div>
       </section>
       

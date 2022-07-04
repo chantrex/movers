@@ -15,11 +15,11 @@
   overflow: hidden;
 }
 
-.container1 h1 {
+.mainPresentation {
+  display: flex;
   text-align: center;
   font-size: 40px;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   margin: 15px;
   color: black;
@@ -27,8 +27,79 @@
   border-radius: 5px;
 }
 
-.container1 h1:hover {
-  color: #008035;
+.mainPresentation h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 15px;
+  color: white;
+  transition: .7s ease-in-out;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 50px;
+}
+.contactForm input {
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 0 5px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.contactForm h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.contactForm label {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.contactForm textarea {
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.contactForm button {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+  background-color: #bbb281;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all ease-in-out;
+}
+
+.contactForm button:hover {
+  border: 2px solid white;
 }
 
 .videoContainer {
@@ -45,12 +116,37 @@
   background-color: rgb(0, 0, 0);
   width: 100%;
   height: 100vh;
-  opacity: .2;
+  opacity: .4;
 }
 
 .videoContainer img {
   width: 100vw;
   height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 740px) {
+
+  .mainPresentation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainPresentation h1{
+    font-size: 35px;
+    margin: 15px;
+    color: white;
+    transition: .7s ease-in-out;
+  }
+
+  .contactForm {
+    margin-left: 0;
+  }
+
+  .contactForm h2 {
+    font-size: 25px;
+  }
+
 }
 
 /* How to start moving Container */
@@ -93,6 +189,8 @@
   border-radius: 10px;
   box-shadow: 2px 3px 5px black;
   transition: all .3s ease-in-out;
+  animation: usCardAnimation 7s ease;
+
 }
 
 .startMovingCard:hover {
@@ -228,7 +326,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F7D716;
+  background-color: #bbb281;
   height: auto;
   width: 350px;
   margin: 30px;
@@ -237,7 +335,7 @@
   border-radius: 15px;
   box-shadow: 3px 3px 5px black;
   color: white;
-  animation: usCardAnimation 6s ease;
+  animation: usCardAnimation 12s ease;
 }
 
 @keyframes usCardAnimation {
@@ -371,7 +469,7 @@
 }
 
 .bestMovingServices a {
-  background-color: #F7D716;
+  background-color: #bbb281;
   border-radius: 30px;
   padding: 15px 0;
   margin: 30px 0;
@@ -443,7 +541,7 @@
 }
 
 .clientCommentCard:hover {
-  border: 2px solid rgb(206, 206, 206);
+  border: 2px solid #bbb281;
   transition-timing-function: ease-in-out;
 }
 
