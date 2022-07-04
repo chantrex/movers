@@ -12,6 +12,11 @@
   border-radius: 7px;
 }
 
+.navbarBrand{
+  color: black;
+  text-decoration: none;
+}
+
 .navbarLinksBox {
   display: flex;
   justify-content: flex-end;
@@ -41,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   text-decoration: underline;
 }
@@ -90,8 +95,15 @@
 /* For 300px or lesser devices the navabar's box links will be smaller */
 @media screen and (max-width: 470px) {
 
-    .navbarLinksOl {
-    width: 120px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .navbarLinksOl {
+    width: 95%;
   }
   
 }

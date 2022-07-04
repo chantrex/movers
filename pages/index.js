@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Navbar from '../components/Navbar';
 
-const companyName = "Pulga Movers";
+const companyName = "Golden Movers";
 const starsRate = <img src="https://img.icons8.com/emoji/344/star-emoji.png" alt="" />;
 
 function StarsCounter5() {
@@ -33,12 +33,12 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{companyName} | Home</title>
       </Head>
       <Navbar />
       <section className={utilStyles.container1}>
         <div className={utilStyles.mainPresentation}>
-          <h1>Pulga Movers.<br/>Changes are good!</h1>
+          <h1>{companyName}.<br/>Changes are good!</h1>
           <form className={utilStyles.contactForm} action="https://formsubmit.co/chris.chantres@gmail.com" method='POST'>
             <h2>Contact us!</h2>
             <label>Your name:</label>
@@ -52,11 +52,11 @@ export default function Home() {
         </div>
         <div className={utilStyles.videoContainer}>
           <div className={utilStyles.videoContainerOverlay}></div>
-          <img src="https://i.ibb.co/pXKvG39/toronto1.jpg" alt="" />
+          <img src="/images/toronto_bg.jpg" alt="" />
         </div>
       </section>
       <section className={utilStyles.howStartMovingContainer}>
-        <h2>How to move with {companyName}</h2>
+        <h2>How to move with {companyName}?</h2>
         <main className={utilStyles.howStartMovingMain}>
           <div className={utilStyles.startMovingCard}>
             <h4>First</h4>
@@ -133,7 +133,7 @@ export default function Home() {
           <h3>How we work?</h3>
           <div className={utilStyles.howWeWork}>
             <img src="data:image/png;base64,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"></img>
-            <p>After the due date scheduled to start the moving, Pulga Mover's team is called to get our client's location to do the job. They meet the user and the client pays 50% of the amount, then our work starts. After the moving the client pays the 50% remaining.</p>
+            <p>After the due date scheduled to start the moving, {companyName}'s team is called to get our client's location to do the job. They meet the user and the client pays 50% of the amount, then our work starts. After the moving the client pays the 50% remaining.</p>
           </div>
         </div>
       </section>

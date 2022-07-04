@@ -8,10 +8,10 @@ export default function Navbar() {
   return(
     <>
       <section className={styles.container}>
-        <h1>Pulga Movers</h1>
+        <a className={styles.navbarBrand} href="/"><h1>Golden Movers</h1></a>
         <div className={styles.navbarLinksBox}>
           <div className={styles.navbarLinksOl}>
-            <Link href="/">
+            {/* <Link href="/">
               <p className={styles.navbarLinks}>Home</p>
             </Link>
             <Link href="/contact">
@@ -21,7 +21,7 @@ export default function Navbar() {
           <div className={styles.navbarLinksOl}>
           <Link href="/prices">
               <p className={styles.navbarLinks}>Prices</p>
-            </Link>
+            </Link> */}
             <a className={styles.navbarLinksPhone} href="tel:+522227734502">Call us: 222 773 4502</a>
           </div>
             
