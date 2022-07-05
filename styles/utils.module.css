@@ -166,7 +166,7 @@
   font-weight: 300;
   margin-bottom: 100px;
   text-align: center;
-  color: rgb(38, 38, 38);
+  letter-spacing: 5px;
 }
 
 .howStartMovingMain {
@@ -276,6 +276,7 @@
   font-size: 40px;
   text-align: center;
   font-weight: 300;
+  letter-spacing: 5px;
 }
 
 /* .container2Header span {
@@ -431,6 +432,8 @@
   width: auto;
   border-radius: 20px;
   padding: 10px;
+  letter-spacing: 5px;
+
 }
 
 .howWeWork {
@@ -462,6 +465,7 @@
 .bestMovingServices h2 {
   font-size: 40px;
   font-weight: 300;
+  letter-spacing: 5px;
 }
 
 .bestMovingServices p {
@@ -477,7 +481,11 @@
   color: black;
   text-decoration: none;
   font-weight: normal;
-  transition: all .5s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.bestMovingServices a:hover {
+  border: 2px solid black;
 }
 
 @media screen and (max-width: 610px) {
@@ -599,4 +607,61 @@
     width: 250px;
     height: 400px;
   }
+}
+
+/* Services Container */
+
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;  
+}
+
+.servicesContainer h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+.servicesMain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.serviceCard {
+  background-color: #bbb281;
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+  padding: 15px;
+  border-radius: 10px;
+  transition: .2s ease-in-out;
+}
+
+.serviceCard:hover {
+  background-color: #817b5a;
+  color: white;
+  cursor: pointer;
+  transition-timing-function: 2s ease-in-out;
+}
+.serviceCard h2 {
+  margin: 0;
+}
+
+.serviceCard p {
+  font-size: 20px;
+  color: black;
+}
+
+.serviceCard:hover > .serviceCardText {
+  cursor: pointer;
+  color: white;
 }

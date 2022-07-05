@@ -36,7 +36,7 @@ export default function Home() {
         <title>{companyName} | Home</title>
       </Head>
       <Navbar />
-      <section className={utilStyles.container1}>
+      <section className={utilStyles.container1} id='quote'>
         <div className={utilStyles.mainPresentation}>
           <h1>{companyName}.<br/>Changes are good!</h1>
           <form className={utilStyles.contactForm} action="https://formsubmit.co/chris.chantres@gmail.com" method='POST'>
@@ -127,7 +127,7 @@ export default function Home() {
       <div className={utilStyles.bestMovingServices}>
           <h2>Have One of the Best Moving Services in Toronto</h2>
           <p>With the customer service we offer and the and the willingness to help the you, {companyName} offers the resources and smart work to get you to your new home.</p>
-          <a className={utilStyles.getAQuote} href="/contact">Get a Quote!</a>
+          <a className={utilStyles.getAQuote} href="#quote">Get a Quote!</a>
         </div>
         <div className={utilStyles.container3section1}>
           <h3>How we work?</h3>
@@ -154,6 +154,19 @@ export default function Home() {
             <h3>Karol Rey</h3>
             {StarsCounter5()}          
             <p>The job was very quick. They know what is taking care about the items. I am happy with the work they did.</p>
+          </div>
+        </main>
+      </section>
+      <section className={utilStyles.servicesContainer}>
+        <h1>Our Services!</h1>
+        <main className={utilStyles.servicesMain}>
+          <div className={utilStyles.serviceCard}>
+            <h2>Residential Moving</h2>
+            <p className={utilStyles.serviceCardText}>Сustomized residential services by considering the unique family concerns. Toronto (GTA)</p>
+          </div>
+          <div className={utilStyles.serviceCard}>
+            <h2>Packing</h2>
+            <p className={utilStyles.serviceCardText}>If you want to speed up your moving we do have packing service. We take care of the work, you enjoy your move.</p>
           </div>
         </main>
       </section>
