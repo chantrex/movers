@@ -29,6 +29,12 @@
   align-self: center;
   width: 350px;
 }
+/* 
+.navbarLinksOl p {
+  font-size: 25px;
+  padding: 0 15px;
+  margin: 15px 0;
+} */
 
 .navbarLinks {
   font-size: 20px;
@@ -49,12 +55,8 @@
   font-size: 25px;
   color: black;
   text-decoration: underline;
+  margin-right: 30px;
 }
-
-.navbarLinksPhone:hover {
-  text-decoration: none;
-}
-
 
 /* Responsive design (specaily for iPhones 12/13 Pro) */
 @media screen and (max-width: 810px) {
@@ -90,6 +92,14 @@
     font-weight: 0;
   }
 
+  .navbarLinksPhone {
+    margin: 0;
+  }
+
+  .navbarLinksOl p {
+    margin: 5px 0;
+  }
+
 }
 
 /* For 300px or lesser devices the navabar's box links will be smaller */
@@ -102,8 +112,17 @@
     background-color: rgba(255, 255, 255, 0.85);
   }
 
+  .navbarLinksBox {
+    width: 100%;
+  }
+
   .navbarLinksOl {
-    width: 95%;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .navbarLinksPhone {
+    font-size: 20px;
   }
   
 }

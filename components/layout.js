@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
-export const siteTitle = 'Pulga Movers';
+export const companyName = 'Golden Movers';
+export const companyPhone = <a href="tel:+522227734502">222 773 4502</a>;
 
 export default function Layout({ children, home }) {
   return (
@@ -14,10 +15,10 @@ export default function Layout({ children, home }) {
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
+            companyName,
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={companyName} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <main>{children}</main>

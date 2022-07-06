@@ -204,7 +204,7 @@
   text-align: center;
   color: #F24C4C;
   font-size: 25px;
-  background-color: #293462;
+  background-color: #1a202a;
   margin: 3px;
   border-radius: 10px;
 }
@@ -637,12 +637,18 @@
 }
 
 .serviceCard {
-  background-color: #bbb281;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dbdbdb;
   width: 300px;
-  height: 250px;
+  height: auto;
   object-fit: contain;
   padding: 15px;
   border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
   transition: .2s ease-in-out;
 }
 
@@ -652,6 +658,22 @@
   cursor: pointer;
   transition-timing-function: 2s ease-in-out;
 }
+
+.serviceCardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 3px;
+  background-color: #817b5a;
+  border-radius: 15px;
+
+}
+.serviceCardImg img {
+  border-radius: 15px;
+}
+
 .serviceCard h2 {
   margin: 0;
 }

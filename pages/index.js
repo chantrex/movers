@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout, { companyName } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-const companyName = "Golden Movers";
+// const companyName = "Golden Movers";
 const starsRate = <img src="https://img.icons8.com/emoji/344/star-emoji.png" alt="" />;
+// const companyPhone = <a href="tel:+522227734502">222 773 4502</a>;
 
 function StarsCounter5() {
   return (
@@ -162,14 +164,21 @@ export default function Home() {
         <main className={utilStyles.servicesMain}>
           <div className={utilStyles.serviceCard}>
             <h2>Residential Moving</h2>
+            <div className={utilStyles.serviceCardImg}>
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.consumeraffairs.com%2Ffiles%2Fnews%2FMoving_company_loading_up_truck_MartinPrescott_Getty_Images.jpg&f=1&nofb=1" alt="" />
+            </div>
             <p className={utilStyles.serviceCardText}>Сustomized residential services by considering the unique family concerns. Toronto (GTA)</p>
           </div>
           <div className={utilStyles.serviceCard}>
             <h2>Packing</h2>
+            <div className={utilStyles.serviceCardImg}>
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.movinonmovers.com%2Fwp-content%2Fuploads%2F2020%2F03%2FDepositphotos_180889424_s-2019-2.jpg&f=1&nofb=1" alt="" />
+            </div>
             <p className={utilStyles.serviceCardText}>If you want to speed up your moving we do have packing service. We take care of the work, you enjoy your move.</p>
           </div>
         </main>
       </section>
+      <Footer />
     </Layout>
   );
 }
