@@ -1,13 +1,10 @@
 import styles from './footer.module.css';
+import { companyName, whatsappLink, hrefLinkPhone, companyPhone, hrefLinkEmail, companyEmail } from '../layout';
 
-export const companyName = 'Golden Movers';
-export const companyPhoneA = <a href="tel:+522227734502">222 773 4502</a>;
-export const companyEmail = <a href="mailto:info@goldemovers.com">info@goldemovers.com</a>;
+const companyPhoneALink = <a href={hrefLinkPhone}>{companyPhone}</a>;
+const companyEmailALink = <a href={hrefLinkEmail}>{companyEmail}</a>;
 
-const companyPhone = '522227734502';
-const waMessage = "Hello!%20I%20want%20to%20rent%20Golden%20movers'%20services";
-let whatsappLink = "https://wa.me/" + companyPhone + "?text=" + waMessage;
-
+// It needed to create here again the whatsapp const to change the styles in the icon (at the Footer)
 const whatsapp = <a href={whatsappLink} target="_blank" className={styles.whatsapp}>
 <img
   src="https://trickuweb.com/whatsapp.png"
@@ -30,8 +27,8 @@ export default function Footer() {
             <h2>Contact Info</h2>
             <ul className={styles.footerContactUl}>
               <li>Vaughan, Ontario.</li>
-              <li>{companyPhoneA}</li>
-              <li>{companyEmail}</li>
+              <li>{companyPhoneALink}</li>
+              <li>{companyEmailALink}</li>
               <li>
                 Send us a WhatsApp{whatsapp}
               </li>

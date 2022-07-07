@@ -1,7 +1,23 @@
 import Head from 'next/head';
 
+// Export constants to the entire web site to make it easier and scalable
 export const companyName = 'Golden Movers';
-export const companyPhone = <a href="tel:+522227734502">222 773 4502</a>;
+export const companyPhone = '(647)-762-3958'
+export const companyLadaPhone = '16477623958';
+export const hrefLinkPhone = 'tel:+' + companyLadaPhone;
+export const companyEmail = 'info@goldenmovers.com';
+export const hrefLinkEmail = 'mailto:' + companyEmail;
+
+const waMessage = "Hello!%20I%20want%20to%20get%20info%20about%20Golden%20movers'%20services";
+export const whatsappLink = "https://wa.me/" + companyLadaPhone + "?text=" + waMessage;
+export const whatsapp = <a href={whatsappLink} target="_blank">
+<img
+  src="https://trickuweb.com/whatsapp.png"
+  alt=""
+  height="50px"
+  width="50px"
+/>
+</a>
 
 export default function Layout({ children, home }) {
   return (

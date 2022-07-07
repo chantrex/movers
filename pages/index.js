@@ -4,9 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-// const companyName = "Golden Movers";
 const starsRate = <img src="https://img.icons8.com/emoji/344/star-emoji.png" alt="" />;
-// const companyPhone = <a href="tel:+522227734502">222 773 4502</a>;
 
 function StarsCounter5() {
   return (
