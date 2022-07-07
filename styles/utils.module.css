@@ -149,6 +149,20 @@
 
 }
 
+@media screen and (max-height: 520px) {
+  .container1 {
+    height: auto;
+  }
+
+  .videoContainerOverlay {
+    height: 100%;
+  }
+
+  .videoContainer img {
+    height: auto;
+  }
+}
+
 /* How to start moving Container */
 
 .howStartMovingContainer {
