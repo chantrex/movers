@@ -9,20 +9,11 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* line-height: 1.6; */
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
-}
-
-a {
-  color: #00f365;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #a3eac0;
 }
 
 img {

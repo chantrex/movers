@@ -1,0 +1,48 @@
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(218, 218, 218);
+}
+
+.sectionMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+}
+
+.sectionMain h1 {
+  font-size: 100px;
+  margin: 10px 0;
+  letter-spacing: 15px;
+}
+
+.sectionMain p {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.goBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  white;
+  background-color: #bbb281;
+  font-weight: bold;
+  text-decoration: none;
+  width: auto;
+  height: 3rem;
+  border-radius: 15px;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+  border: 2px solid black;
+}
+
+.goBack:hover {
+  border: none;
+}
