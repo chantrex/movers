@@ -54,7 +54,7 @@ export default function Home() {
             <label>Your name:</label>
             <input type="text" name='name' placeholder='Mark Lamar' required />
             <label>Your email:</label>
-            <input type="email" name='email' placeholder='mark123@mail.com' required />
+            <input type="email" name='email' placeholder='mark1234@mail.com' required />
             <label>Your message:</label>
             <textarea placeholder="Tell us your message!" name="message" required></textarea>
             <button type='submit'>Send</button>
