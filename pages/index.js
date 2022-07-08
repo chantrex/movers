@@ -33,6 +33,16 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{companyName} | Home</title>
+        {/* <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-233892273-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-233892273-1');
+</script> */}
       </Head>
       <Navbar />
       <section className={utilStyles.container1} id='quote'>
@@ -125,7 +135,7 @@ export default function Home() {
       <section className={utilStyles.container3}>
       <div className={utilStyles.bestMovingServices}>
           <h2>Have One of the Best Moving Services in Toronto</h2>
-          <p>With the customer service we offer and the and the willingness to help the you, {companyName} offers the resources and smart work to get you to your new home.</p>
+          <p>With the customer service we offer and the and the willingness to help you, {companyName} offers the resources and smart work to get you to your new home.</p>
           <a className={utilStyles.getAQuote} href="#quote">Get a Quote!</a>
         </div>
         <div className={utilStyles.container3section1}>
@@ -140,17 +150,17 @@ export default function Home() {
         <h2>What Our Clients Say About Us:</h2>
         <main className={utilStyles.clientsCommentsMain}>
           <div className={utilStyles.clientCommentCard}>
-            <h3>Dolores Justo</h3>
+            <h3>Sara Amici</h3>
             {StarsCounter5()}          
             <p>This was my first experience moving in Toronto and I'm sure these guys did it with good effort and dedication. Congratulations {companyName}'s team.</p>
           </div>
           <div className={utilStyles.clientCommentCard}>
-            <h3>Emily Jaqueline</h3>
+            <h3>Max Simoes</h3>
             {StarsCounter5()}          
             <p>I am impressed of the service you have. You guys are super positive, I like how you did your work. Everything was grabbed and put carefuly.</p>
           </div>
           <div className={utilStyles.clientCommentCard}>
-            <h3>Karol Rey</h3>
+            <h3>Maryna Lang</h3>
             {StarsCounter5()}          
             <p>The job was very quick. They know what is taking care about the items. I am happy with the work they did.</p>
           </div>

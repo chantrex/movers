@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 // Export constants to the entire web site to make it easier and scalable
 export const companyName = 'Emy Movers';
@@ -8,7 +9,7 @@ export const hrefLinkPhone = 'tel:+' + companyLadaPhone;
 export const companyEmail = 'info@goldenmovers.com';
 export const hrefLinkEmail = 'mailto:' + companyEmail;
 
-const waMessage = "Hello!%20I%20want%20to%20get%20info%20about%20Golden%20movers'%20services";
+const waMessage = "Hello!%20I%20want%20to%20get%20an%20estimate%20about%20Emy%20Movers'%20services";
 export const whatsappLink = "https://wa.me/" + companyLadaPhone + "?text=" + waMessage;
 export const whatsapp = <a href={whatsappLink} target="_blank">
 <img
