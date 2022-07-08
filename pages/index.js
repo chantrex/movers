@@ -48,7 +48,7 @@ export default function Home() {
       <section className={utilStyles.container1} id='quote'>
         <div className={utilStyles.mainPresentation}>
           <h1>{companyName}.<br/>Changes are good!</h1>
-          <form className={utilStyles.contactForm} action="https://formsubmit.co/chris.chantres@gmail.com" method='POST'>
+          <form className={utilStyles.contactForm} action="https://formsubmit.co/emymovers@gmail.com" method='POST'>
             <h2>Contact us!</h2>
             <label>Your name:</label>
             <input type="text" name='name' placeholder='Mark Lamar' required />

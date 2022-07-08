@@ -6,7 +6,7 @@ export const companyName = 'Emy Movers';
 export const companyPhone = '(647)-762-3958'
 export const companyLadaPhone = '16477623958';
 export const hrefLinkPhone = 'tel:+' + companyLadaPhone;
-export const companyEmail = 'info@goldenmovers.com';
+export const companyEmail = 'emymovers@gmail.com';
 export const hrefLinkEmail = 'mailto:' + companyEmail;
 
 const waMessage = "Hello!%20I%20want%20to%20get%20an%20estimate%20about%20Emy%20Movers'%20services";
