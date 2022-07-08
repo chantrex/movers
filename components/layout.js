@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 // Export constants to the entire web site to make it easier and scalable
-export const companyName = 'Golden Movers';
+export const companyName = 'Emy Movers';
 export const companyPhone = '(647)-762-3958'
 export const companyLadaPhone = '16477623958';
 export const hrefLinkPhone = 'tel:+' + companyLadaPhone;
